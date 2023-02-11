@@ -5,9 +5,9 @@
 	</requires>
 	<extension point="xbmc.addon.repository" name="Ottlinux repo">
 		<dir minversion="18.9.0">
-                <info compressed="false">https://raw.githubusercontent.com/tvboxlinux/motor/_repo/addons.xml</info>
-                <checksum>https://raw.githubusercontent.com/tvboxlinux/motor/_repo/addons.xml.md5</checksum>
-                <datadir zip="true">https://raw.githubusercontent.com/tvboxlinux/motor/_repo/</datadir>
+                <info compressed="false">https://raw.githubusercontent.com/tvboxlinux/motor/master/_repo/addons.xml</info>
+                <checksum>https://raw.githubusercontent.com/tvboxlinux/motor/master/_repo/addons.xml.md5</checksum>
+                <datadir zip="true">https://github.com/tvboxlinux/motor/raw/master/_repo/</datadir>
 	        <hashes>false</hashes>
 		</dir>
 	</extension>
