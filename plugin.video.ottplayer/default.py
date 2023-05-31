@@ -85,7 +85,7 @@ iconaccount		  = os.path.join(MEDIA,   'iconaccount.png')
 icontvguide		  = os.path.join(MEDIA,   'iconguide.png')
 
 #########################=XC VARIABLES=#####################################
-dns				  = 'http://castlempire.site:8080'
+dns				  = control.setting('DNS')
 username		  = control.setting('Username')
 password		  = control.setting('Password')
 live_url		  = '{0}/enigma2.php?username={1}&password={2}&type=get_live_categories'.format(dns,username,password)
@@ -106,6 +106,7 @@ def buildcleanurl(url):
 
 def start(signin):
 	if username == "":
+		dns = tools.keypopup('Ingrese su servidor ejemplo: http://servidor:puerto')
 		usern = tools.keypopup('Usuario')
 		passw = tools.keypopup('Contraseña')
 		control.setSetting('DNS',dns)

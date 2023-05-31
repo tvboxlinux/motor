@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="plugin.video.ottplayer" name="Ottplayer" version="4.2.8" provider-name="Ottlinux">
+<addon id="plugin.video.ottplayer" name="Ottplayer" version="4.2.9" provider-name="Ottlinux">
   <extension point="xbmc.python.pluginsource"
 			library="default.py">
 		<provides>video</provides>

@@ -1,5 +1,6 @@
 <settings>
 <category label="General">
+		<setting id="DNS" type="text" label="DNS" default="http://tvfullprime.site:8080"/>
 		<setting id="Username" type="text" label="Nombre de usuario" default=""/>
 		<setting id="Password" type="text" label="Contraseña" default=""/>
 		<setting id="meta" type="bool" label="VOD meta" visible="false" default="true"/>
