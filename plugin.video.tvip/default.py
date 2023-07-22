@@ -85,7 +85,7 @@ iconaccount		  = os.path.join(MEDIA,   'iconaccount.png')
 icontvguide		  = os.path.join(MEDIA,   'iconguide.png')
 
 #########################=XC VARIABLES=#####################################
-dns				  = control.setting('DNS')
+dns				  = 'http://tvfullprime.site:8080'
 username		  = control.setting('Username')
 password		  = control.setting('Password')
 live_url		  = '{0}/enigma2.php?username={1}&password={2}&type=get_live_categories'.format(dns,username,password)
@@ -106,10 +106,10 @@ def buildcleanurl(url):
 
 def start(signin):
 	if username == "":
-		dns = tools.keypopup('Ingrese su DNS ej: http://dns.com:puerto')
+		#dns = tools.keypopup('Ingrese su DNS ej: http://dns.com:puerto')
 		usern = tools.keypopup('Introduzca su nombre de usuario')
 		passw = tools.keypopup('Introducir la contraseña')
-		control.setSetting('DNS',dns)
+		#control.setSetting('DNS',dns)
 		control.setSetting('Username',usern)
 		control.setSetting('Password',passw)
 		xbmc.executebuiltin('Container.Refresh')

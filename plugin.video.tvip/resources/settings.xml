@@ -1,6 +1,5 @@
 <settings>
 <category label="General">
-		<setting id="DNS" type="text" label="DNS" default=""/>
 		<setting id="Username" type="text" label="Usuario" default=""/>
 		<setting id="Password" type="text" label="Contraseña" default=""/>
 		<setting id="meta" type="bool" label="VOD meta" visible="false" default="false"/>
