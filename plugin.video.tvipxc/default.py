@@ -38,7 +38,7 @@
 
 #############################=IMPORTS=######################################
 	#Kodi Specific
-import xbmc,xbmcaddon,xbmcgui,xbmcplugin,xbmcvfs
+import xbmc,xbmcvfs,xbmcaddon,xbmcgui,xbmcplugin
 	#Python Specific
 import base64,os,re,time,sys,urllib.request
 import urllib.parse,urllib.error,json,datetime,shutil
@@ -125,7 +125,7 @@ def start(signin):
 			start()
 		else:
 			line1 = "Conexion exitosa"
-			line2 = "Bienvenido usuario"
+			line2 = "Bienvenido usuario "+ADDON_NAME
 			line3 = ('[B][COLOR white]%s[/COLOR][/B]'%usern)
 			xbmcgui.Dialog().ok(ADDON_NAME, line1+'\n' + line2 +'\n' + line3)
 			adult_set()
@@ -700,8 +700,16 @@ def num2day(num):
 	return day
 	
 def extras():
-	tools.addDir('Ejecutar una prueba de velocidad','ST',10,icon,background,'')
-	tools.addDir('Limpiar el cache del servidor','clearcache',10,icon,background,'')
+	tools.addDir('Run a Speed Test','ST',10,icon,background,'')
+	try:
+		if xbmc.getCondVisibility('System.HasAddon(pvr.iptvsimple)'):
+			tools.addDir('Setup PVR Guide','tv',10,icon,background,'')
+		if not xbmc.getCondVisibility('System.HasAddon(pvr.iptvsimple)'):
+			tools.addDir('Install PVR Guide','Itv',10,icon,background,'')
+		if os.path.exists(M3U_PATH):
+			tools.addDir('Refresh M3U','RefM3U',10,icon,background,'')
+	except:pass
+	tools.addDir('Clear Cache','clearcache',10,icon,background,'')
 	#tools.addDir('Tester','TEST',10,icon,background,'')
 
 params=tools.get_params()

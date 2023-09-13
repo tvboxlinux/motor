@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-                                                    #
 #############################=IMPORTS=######################################
 	#Kodi Specific
-import xbmc,xbmcplugin,xbmcgui,xbmcaddon,xbmcvfs
+import xbmc,xbmcvfs,xbmcplugin,xbmcgui, xbmcaddon
 	#Python Specific
 import os,re,sys,json,base64,shutil,socket
 import urllib.request,urllib.parse,urllib.error,urllib.parse

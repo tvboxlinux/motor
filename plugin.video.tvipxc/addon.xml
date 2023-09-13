@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.tvipxc" name="Xtream Player" version="3.2.2" provider-name="Ottlinux">
+<addon id="plugin.video.tvipxc" name="[B][COLOR red]Xtream Player[/B][/COLOR]" version="3.2.3" provider-name="Ottlinux">
   <extension point="xbmc.python.pluginsource"
 			library="default.py">
 		<provides>video</provides>
