@@ -1,11 +1,61 @@
 #!/usr/bin/env python
 ############################################################################
+#							  /T /I										   #
+#							   / |/ | .-~/								   #
+#						   T\ Y	 I	|/	/  _							   #
+#		  /T			   | \I	 |	I  Y.-~/							   #
+#		 I l   /I		T\ |  |	 l	|  T  /								   #
+#	  T\ |	\ Y l  /T	| \I  l	  \ `  l Y								   #
+# __  | \l	 \l	 \I l __l  l   \   `  _. |								   #
+# \ ~-l	 `\	  `\  \	 \ ~\  \   `. .-~	|								   #
+#  \   ~-. "-.	`  \  ^._ ^. "-.  /	 \	 |								   #
+#.--~-._  ~-  `	 _	~-_.-"-." ._ /._ ." ./								   #
+# >--.	~-.	  ._  ~>-"	  "\   7   7   ]								   #
+#^.___~"--._	~-{	 .-~ .	`\ Y . /	|								   #
+# <__ ~"-.	~		/_/	  \	  \I  Y	  : |								   #
+#	^-.__			~(_/   \   >._:	  | l______							   #
+#		^--.,___.-~"  /_/	!  `-.~"--l_ /	   ~"-.						   #
+#			   (_/ .  ~(   /'	  "~"--,Y	-=b-. _)					   #
+#				(_/ .  \  Fire TV Guru/ l	   c"~o \					   #
+#				 \ /	`.	  .		.^	 \_.-~"~--.	 )					   #
+#				  (_/ .	  `	 /	   /	   !	   )/					   #
+#				   / / _.	'.	 .':	  /		   '					   #
+#				   ~(_/ .	/	 _	`  .-<_								   #
+#					 /_/ . ' .-~" `.  / \  \		  ,z=.				   #
+#					 ~( /	'  :   | K	 "-.~-.______//					   #
+#					   "-,.	   l   I/ \_	__{--->._(==.				   #
+#						//(		\  <	~"~"	 //						   #
+#					   /' /\	 \	\	  ,v=.	((						   #
+#					 .^. / /\	  "	 }__ //===-	 `						   #
+#					/ / ' '	 "-.,__ {---(==-							   #
+#				  .^ '		 :	T  ~"	ll								   #
+#				 / .  .	 . : | :!		 \								   #
+#				(_/	 /	 | | j-"		  ~^							   #
+#				  ~-<_(_.^-~"											   #
+#																		   #
+#																		   #
+#					   original speedtest-cli DEV						   #
+#			 Matt Martz (https://github.com/sivel/speedtest-cli)		   #
+#																		   #
+#																		   #
+# Licensed under the Apache License, Version 2.0 (the "License"); you may  #
+# not use this file except in compliance with the License. You may obtain  #
+# a copy of the License at												   #
+#																		   #
+#	   http://www.apache.org/licenses/LICENSE-2.0						   #
+#																		   #
+# Unless required by applicable law or agreed to in writing, software	   #
+# distributed under the License is distributed on an "AS IS" BASIS,WITHOUT #
+# WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the #
+# License for the specific language governing permissions and limitations  #
+# under the License.													   #
+############################################################################
 
 
 try:
 	from kodi_six import xbmc, xbmcaddon, xbmcgui
 except ImportError:
-	import xbmc, xbmcvfs, xbmcgui, xbmcaddon
+	import xbmc ,xbmcgui, xbmcaddon,xbmcvfs
 
 import os
 import re

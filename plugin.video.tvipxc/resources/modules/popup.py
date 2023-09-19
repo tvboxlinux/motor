@@ -1,5 +1,41 @@
 #!/usr/bin/python                                                          #
 # -*- coding: utf-8 -*-                                                    #
+############################################################################
+#							  /T /I										   #
+#							   / |/ | .-~/								   #
+#						   T\ Y	 I	|/	/  _							   #
+#		  /T			   | \I	 |	I  Y.-~/							   #
+#		 I l   /I		T\ |  |	 l	|  T  /								   #
+#	  T\ |	\ Y l  /T	| \I  l	  \ `  l Y								   #
+# __  | \l	 \l	 \I l __l  l   \   `  _. |								   #
+# \ ~-l	 `\	  `\  \	 \ ~\  \   `. .-~	|								   #
+#  \   ~-. "-.	`  \  ^._ ^. "-.  /	 \	 |								   #
+#.--~-._  ~-  `	 _	~-_.-"-." ._ /._ ." ./								   #
+# >--.	~-.	  ._  ~>-"	  "\   7   7   ]								   #
+#^.___~"--._	~-{	 .-~ .	`\ Y . /	|								   #
+# <__ ~"-.	~		/_/	  \	  \I  Y	  : |								   #
+#	^-.__			~(_/   \   >._:	  | l______							   #
+#		^--.,___.-~"  /_/	!  `-.~"--l_ /	   ~"-.						   #
+#			   (_/ .  ~(   /'	  "~"--,Y	-=b-. _)					   #
+#				(_/ .  \  Fire TV Guru/ l	   c"~o \					   #
+#				 \ /	`.	  .		.^	 \_.-~"~--.	 )					   #
+#				  (_/ .	  `	 /	   /	   !	   )/					   #
+#				   / / _.	'.	 .':	  /		   '					   #
+#				   ~(_/ .	/	 _	`  .-<_								   #
+#					 /_/ . ' .-~" `.  / \  \		  ,z=.				   #
+#					 ~( /	'  :   | K	 "-.~-.______//					   #
+#					   "-,.	   l   I/ \_	__{--->._(==.				   #
+#						//(		\  <	~"~"	 //						   #
+#					   /' /\	 \	\	  ,v=.	((						   #
+#					 .^. / /\	  "	 }__ //===-	 `						   #
+#					/ / ' '	 "-.,__ {---(==-							   #
+#				  .^ '		 :	T  ~"	ll								   #
+#				 / .  .	 . : | :!		 \								   #
+#				(_/	 /	 | | j-"		  ~^							   #
+#				  ~-<_(_.^-~"											   #
+#																		   #
+############################################################################
+
 #############################=IMPORTS=######################################
 	#Kodi Specific
 import xbmc,xbmcaddon,xbmcgui,xbmcplugin,xbmcvfs
@@ -65,7 +101,7 @@ def autoConfigQ():
 			self.curlmin = 0; self.curlmax = 20
 			self.recommendedCurl = 10; self.currentCurl = self.recommendedCurl
 			curlpos = tools.percentage(self.currentCurl, self.curlmax)
-			recommended2 = '[COLOR %s]Tiempo de espera de CURL/Baja velocidad CURL:[/COLOR] [COLOR %s]%ss[/COLOR]' % (COLOR1, COLOR2, self.recommendedCurl)
+			recommended2 = '[COLOR %s]Tiempo de espera/Baja velocidad:[/COLOR] [COLOR %s]%ss[/COLOR]' % (COLOR1, COLOR2, self.recommendedCurl)
 			self.recommendedRead = 5; self.currentRead = self.recommendedRead
 			recommended3 = '[COLOR %s]Leer factor del bufer:[/COLOR] [COLOR %s]%s[/COLOR]' % (COLOR1, COLOR2, self.recommendedRead)
 			recommended4 = '[COLOR %s]Modo del Buffer:[/COLOR] [COLOR %s]2[/COLOR]' %(COLOR1, COLOR2)
@@ -86,7 +122,7 @@ def autoConfigQ():
 		def doWrite(self):
 			buffermode = 2
 			if os.path.exists(ADVANCED):
-				choice = DIALOG.yesno(ADDONTITLE, "[COLOR %s]There is currently an active [COLOR %s]AdvancedSettings.xml[/COLOR], would you like to remove it and continue?[/COLOR]" % (COLOR2, COLOR1), yeslabel="[B][COLOR green]Remove Settings[/COLOR][/B]", nolabel="[B][COLOR red]Cancel Write[/COLOR][/B]")
+				choice = DIALOG.yesno(ADDONTITLE, "[COLOR %s]Actualmente hay un archivo activo [COLOR %s]AdvancedSettings.xml[/COLOR],Quieres eliminarlo y continuar?[/COLOR]" % (COLOR2, COLOR1), yeslabel="[B][COLOR green]Quitar la configuracion actual[/COLOR][/B]", nolabel="[B][COLOR red]Cancelar Copiar[/COLOR][/B]")
 				if choice == 0: return
 				try: os.remove(ADVANCED)
 				except: f = open(ADVANCED, 'w'); f.close()
@@ -116,7 +152,7 @@ def autoConfigQ():
 					f.write('	</network>\n')
 					f.write('</advancedsettings>\n')
 				f.close()
-				tools.LogNotify("[COLOR %s]%s[/COLOR]" % (COLOR1, ADDONTITLE), '[COLOR %s]AdvancedSettings.xml have been written[/COLOR]' % COLOR2)
+				tools.LogNotify("[COLOR %s]%s[/COLOR]" % (COLOR1, ADDONTITLE), '[COLOR %s]AdvancedSettings.xml han sido creados y copiados correctamente[/COLOR]' % COLOR2)
 			self.CloseWindow()
 
 		def onClick(self, controlId):

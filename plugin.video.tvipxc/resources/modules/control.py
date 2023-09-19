@@ -46,9 +46,9 @@ player = xbmc.Player()
 playlist = xbmc.PlayList(xbmc.PLAYLIST_VIDEO)
 
 transPath = xbmcvfs.translatePath
-skinPath = transPath('special://skin/')
-addonPath = transPath(addonInfo('path'))
-dataPath = transPath(addonInfo('profile'))
+skinPath = xbmcvfs.translatePath('special://skin/')
+addonPath = xbmcvfs.translatePath(addonInfo('path'))
+dataPath = xbmcvfs.translatePath(addonInfo('profile'))
 
 window = xbmcgui.Window(10000)
 dialog = xbmcgui.Dialog()
