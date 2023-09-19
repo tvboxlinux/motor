@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<window type="dialog">
+	<allowoverlay>no</allowoverlay>
+	<defaultcontrol always="true">2000</defaultcontrol>
+	<coordinates>
+		<system>1</system>
+		<posx>700</posx>
+		<posy>268</posy>
+	</coordinates>
+    <animation effect="" start="300,0" end="0,0" time="500">WindowOpen</animation>
+    <animation effect="" start="0,0" end="300,0" time="500">WindowClose</animation>
+    <controls>
+
+
+        <control type="image">
+            <posx>-700</posx>
+            <posy>260</posy>
+            <width>1280</width>
+            <height>200</height>
+            <texture>alt-bg1.png</texture>
+        </control>
+        <control type="image">
+            <posx>-700</posx>
+            <posy>417</posy>
+            <width>1280</width>
+            <height>40</height>
+            <texture>exitbar.png</texture>
+        </control>
+
+        <control type="button" id="2000"><!-- Exit -->
+            <posx>-680</posx>
+            <posy>240</posy>
+            <width>170</width>
+            <height>170</height>
+            <texturefocus>exitbutton_focus.png</texturefocus>
+			<texturenofocus>exitbutton.png</texturenofocus>
+            <onup></onup>
+            <ondown>2007</ondown>
+            <onleft>2006</onleft>
+            <onright>2005</onright>
+			<label></label>
+		</control>
+
+        <control type="label" id="31011"><!-- Exit title -->
+            <posx>-678</posx>
+            <posy>380</posy>
+            <width>166</width>
+            <height>30</height>
+            <align>center</align>
+            <aligny>center</aligny>
+            <font>tvg_font13</font>
+            <textcolor>ffffffff</textcolor>
+            <visible>true</visible>
+			<label>Exit Guide</label>
+        </control>
+
+        <control type="button" id="2001"><!-- categories -->
+            <posx>-320</posx>
+            <posy>240</posy>
+            <width>170</width>
+            <height>170</height>
+            <texturefocus>categoriesbutton_focus.png</texturefocus>
+			<texturenofocus>categoriesbutton.png</texturenofocus>
+            <onup></onup>
+            <ondown>2007</ondown>
+            <onleft>2005</onleft>
+            <onright>2002</onright>
+		</control>
+
+        <control type="label" id="31012"><!-- Categories Title -->
+            <posx>-318</posx>
+            <posy>380</posy>
+            <width>166</width>
+            <height>30</height>
+            <align>center</align>
+            <aligny>center</aligny>
+            <font>tvg_font13</font>
+            <textcolor>ffffffff</textcolor>
+			<visible>true</visible>
+			<label>Categories</label>
+        </control>
+
+        <control type="button" id="2002"><!-- search -->
+            <posx>-140</posx>
+            <posy>240</posy>
+            <width>170</width>
+            <height>170</height>
+            <texturefocus>searchbutton_focus.png</texturefocus>
+			<texturenofocus>searchbutton.png</texturenofocus>
+            <onup></onup>
+            <ondown>2007</ondown>
+            <onleft>2001</onleft>
+            <onright>2003</onright>
+			<label></label>
+		</control>
+        <control type="label"><!-- Search Title -->
+            <posx>-138</posx>
+            <posy>380</posy>
+            <width>166</width>
+            <height>30</height>
+            <align>center</align>
+            <aligny>center</aligny>
+            <font>tvg_font13</font>
+            <textcolor>ffffffff</textcolor>
+			<visible>true</visible>
+			<label>Search</label>
+        </control>
+
+
+        <control type="button" id="2003"><!-- planner -->
+            <posx>40</posx>
+            <posy>240</posy>
+            <width>170</width>
+            <height>170</height>
+            <texturefocus>plannerbutton_focus.png</texturefocus>
+			<texturenofocus>plannerbutton.png</texturenofocus>
+            <onup></onup>
+            <ondown>2007</ondown>
+            <onleft>2002</onleft>
+            <onright>2004</onright>
+			<label></label>
+		</control>
+
+        <control type="label" id="31013"><!-- planner Title -->
+            <posx>42</posx>
+            <posy>380</posy>
+            <width>166</width>
+            <height>30</height>
+            <align>center</align>
+            <aligny>center</aligny>
+            <font>tvg_font13</font>
+            <textcolor>ffffffff</textcolor>
+			<visible>true</visible>
+			<label>My Planner</label>
+        </control>
+		
+        <control type="button" id="2004"><!-- Schedule -->
+            <posx>220</posx>
+            <posy>240</posy>
+            <width>170</width>
+            <height>170</height>
+            <texturefocus>schedulebutton_focus.png</texturefocus>
+			<texturenofocus>schedulebutton.png</texturenofocus>
+            <onup></onup>
+            <ondown>2007</ondown>
+            <onleft>2003</onleft>
+            <onright>2006</onright>
+			<label></label>
+		</control>
+
+        <control type="label" id="31014"><!-- Schedule Title -->
+            <posx>222</posx>
+            <posy>380</posy>
+            <width>166</width>
+            <height>30</height>
+            <align>center</align>
+            <aligny>center</aligny>
+            <font>tvg_font13</font>
+            <textcolor>ffffffff</textcolor>
+			<visible>true</visible>
+			<label>Schedule</label>
+        </control>
+
+        <control type="button" id="2005"><!-- info-->
+            <posx>-500</posx>
+            <posy>240</posy>
+            <width>170</width>
+            <height>170</height>
+            <texturefocus>infobutton_focus.png</texturefocus>
+			<texturenofocus>infobutton.png</texturenofocus>
+            <onup></onup>
+            <ondown>2007</ondown>
+            <onleft>2000</onleft>
+            <onright>2001</onright>
+			<label>$ADDON[script.ivueguide 80005]</label>
+        </control>
+
+        <control type="label" id="31015"><!-- Info Title -->
+            <posx>-498</posx>
+            <posy>380</posy>
+            <width>166</width>
+            <height>30</height>
+            <align>center</align>
+            <aligny>center</aligny>
+            <font>tvg_font13</font>
+            <textcolor>ffffffff</textcolor>
+			<visible>true</visible>
+			<label>Program Info</label>
+        </control>
+
+        <control type="button" id="2006"><!-- tools -->
+            <posx>400</posx>
+            <posy>240</posy>
+            <width>170</width>
+            <height>170</height>
+            <texturefocus>toolsbutton_focus.png</texturefocus>
+			<texturenofocus>toolsbutton.png</texturenofocus>
+            <onup></onup>
+            <ondown>2007</ondown>
+            <onleft>2004</onleft>
+            <onright>2000</onright>
+			<label>$ADDON[script.ivueguide 80005]</label>
+				<visible>true</visible>
+		</control>
+
+        <control type="label" id="31016"><!-- tools Title -->
+            <posx>402</posx>
+            <posy>380</posy>
+            <width>166</width>
+            <height>30</height>
+            <align>center</align>
+            <aligny>center</aligny>
+            <font>tvg_font13</font>
+            <textcolor>ffffffff</textcolor>
+			<visible>true</visible>
+			<label>iVue Tools</label>
+        </control>
+
+        <control type="button" id="2007"><!-- Stop button -->
+            <posx>-175</posx>
+            <posy>420</posy>
+            <width>226</width>
+            <height>30</height>
+            <align>center</align>
+            <aligny>center</aligny>
+            <texturefocus>tvguide-program-grey-focus.png</texturefocus>
+			<texturenofocus></texturenofocus>
+            <onup>2000</onup>
+            <ondown>2000</ondown>
+            <onleft>2000</onleft>
+            <onright>2000</onright>
+			<visible>Player.HasMedia</visible>
+        </control>
+        <control type="label" id=""><!-- stop Title -->
+            <posx>-95</posx>
+            <posy>419</posy>
+            <width>166</width>
+            <height>30</height>
+            <align>left</align>
+            <aligny>center</aligny>
+            <font>tvg_font13</font>
+            <textcolor>ffffffff</textcolor>
+			<visible>Player.HasMedia</visible>
+			<label>[B]Stop Stream[/B]</label>
+        </control>
+        <control type="image"><!-- Stop image -->
+            <posx>-135</posx>
+            <posy>417</posy>
+            <width>35</width>
+            <height>35</height>
+            <align>center</align>
+            <aligny>center</aligny>
+            <texture>shortcutbutton_focus.png</texture>
+			<visible>Player.HasMedia</visible>
+        </control>
+
+
+	</controls>
+</window>
