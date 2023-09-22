@@ -194,40 +194,6 @@
 	</extension>
 </addon>
 
-<addon id="plugin.video.ottplayer" name="Ottplayer" version="4.2.8" provider-name="Ottlinux">
-  <extension point="xbmc.python.pluginsource"
-			library="default.py">
-		<provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-	<summary lang="es">Xtreamcodes</summary>
-	<language>en</language>
-	<description lang="es">Xtreamcodecs ui</description>
-	<platform>all</platform>
-	<assets>
-		<icon>icon.png</icon>
-		<fanart>fanart.jpg</fanart>
-	</assets>
-  </extension>
-</addon>
-
-<addon id="plugin.video.tvip" name="Tvip" version="3.1.9" provider-name="Tvip">
-  <extension point="xbmc.python.pluginsource"
-			library="default.py">
-		<provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-	<summary lang="en">Ottlinux xtream codes</summary>
-	<language>es</language>
-	<description lang="en">App para servidores privados</description>
-	<platform>all</platform>
-	<assets>
-		<icon>icon.png</icon>
-		<fanart>fanart.jpg</fanart>
-	</assets>
-  </extension>
-</addon>
-
 <addon id="plugin.video.tvipxc" name="[B][COLOR red]Xtream Player[/B][/COLOR]" version="3.3.4" provider-name="Ottlinux">	<requires>
 		<import addon="script.module.requests" version="2.27.1"/>
 	</requires>
@@ -260,28 +226,6 @@
             <icon>icon.png</icon>
         </assets>
     <platform>all</platform>
-  </extension>
-</addon>
-
-<addon id="plugin.video.xtreamcodes" name="Xtreamcodes" version="4.8.7" provider-name="Ottlinux">
-  <requires>
-        <import addon="script.module.six" />
-        <import addon="script.module.requests" />
-        <import addon="script.module.kodi-six" />
-  </requires>
-  <extension point="xbmc.python.pluginsource"
-            library="default.py">
-        <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="es">Xtreamcodes</summary>
-    <language>es</language>
-    <description lang="en">Xtreamcodecs ui</description>
-     <platform>all</platform>
-  <assets>
-            <icon>icon.png</icon>
-            <fanart>fanart.jpg</fanart>
-     </assets>
   </extension>
 </addon>
 
