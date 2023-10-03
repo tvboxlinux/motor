@@ -288,7 +288,7 @@ def portals(params):
 def cleargroups(params):
 	dataPath=get_data_path()
 	if params.get("portal") is None:
-		if message_yes_no("Alle Gruppen zurücksetzen?"):
+		if message_yes_no("Restablecer todos los grupos?"):
 			for i in range(13):
 				groups = dataPath + '/' + str(i) + '-groups';
 				if os.path.exists(groups):

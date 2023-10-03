@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <settings>
 	<category label="Datos de la conexion">
-		<setting label="Portal 1" type="sep"/>
+		<setting label="[B][COLOR lime]Portal 1[/COLOR]" type="sep"/>
 		<setting id="website0" type="text" label="Portal" default="http://"/>
 		<setting id="username0" type="text" label="Usuario" default=""/>
 		<setting id="password0" type="text"  label="Contraseña" default=""/>
 		<setting id="port0" type="text" label="Puerto" default=""/>
-        <setting label="Portal 2" type="sep"/>
+        <setting label="[B][COLOR lime]Portal 2[/COLOR]" type="sep"/>
 		<setting id="website1" type="text"  label="Portal" default="http://"/>
 		<setting id="username1" type="text"  label="Usuario" default=""/>
 		<setting id="password1" type="text"  label="Contraseña" default=""/>
 		<setting id="port1" type="text"  label="Puerto" default=""/>
-        <setting label="Portal 3" type="sep" visible="!eq(-4,)"/>
+        <setting label="[B][COLOR lime]Portal 3[/COLOR]" type="sep" visible="!eq(-4,)"/>
 		<setting id="website2" type="text"  label="Portal" visible="!eq(-5,)" default="http://"/>
 		<setting id="username2" type="text"  label="Usuario" visible="!eq(-6,)" default=""/>
 		<setting id="password2" type="text"  label="Contraseña" visible="!eq(-7,)" default=""/>
