@@ -185,7 +185,7 @@ def series_channels(params):
 def decode_data(data):
     data = six.ensure_str(base64.b64decode(data))
     return data
-def handle_wait(time_to_wait, kanal, heading="Abbrechen zur manuellen Auswahl", text1="Starte Stream in  : ", text2="STARTE  : "):
+def handle_wait(time_to_wait, kanal, heading="Cancelar a selección manual", text1="Iniciar transmisión en  : ", text2="Comensar : "):
     progress = xbmcgui.DialogProgress()
     create = progress.create(heading, text2+kanal)
     secs=0

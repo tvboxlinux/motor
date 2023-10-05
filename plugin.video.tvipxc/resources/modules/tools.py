@@ -57,8 +57,8 @@ ADDON_NAME = ADDON.getAddonInfo("name")
 ICON   = xbmcvfs.translatePath(os.path.join('special://home/addons/' + ADDON_ID,  'icon.png'))
 DIALOG = xbmcgui.Dialog()
 DP  = xbmcgui.DialogProgress()
-COLOR1='white'
-COLOR2='blue'
+COLOR1='orange'
+COLOR2='lime'
 dns_text = GET_SET.getSetting(id='DNS')
 Headers = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:105.0) Gecko/20100101 Firefox/105.0',
@@ -102,7 +102,7 @@ def LogNotify(title, message, times=2000, icon=ICON,sound=False):
 	DIALOG.notification(title, message, icon, int(times), sound)
 	
 def ASln():
-	return LogNotify("[COLOR {0}]{1}[/COLOR]".format(COLOR1, ADDON_ID), '[COLOR {0}]AdvancedSettings.xml han sido copiados con exito[/COLOR]'.format(COLOR2))
+	return LogNotify("[COLOR {0}]{1}[/COLOR]".format(COLOR1, ADDON_ID), '[COLOR {0}]La configuracion se creo con exito[/COLOR]'.format(COLOR2))
 
 def regex_from_to(text, from_string, to_string, excluding=True):
 	if excluding:
@@ -208,7 +208,7 @@ def OPEN_URL(url):
 def clear_cache():
 	xbmc.log('CLEAR CACHE ACTIVATED')
 	xbmc_cache_path = os.path.join(xbmcvfs.translatePath('special://home'), 'cache')
-	confirm=xbmcgui.Dialog().yesno("Confirmação","Por favor confirme se você deseja apagar o cache do Kodi")
+	confirm=xbmcgui.Dialog().yesno("Confirmación","Confirme que desea borrar el chache del servidor")
 	if confirm:
 		if os.path.exists(xbmc_cache_path)==True:
 			for root, dirs, files in os.walk(xbmc_cache_path):
@@ -225,7 +225,7 @@ def clear_cache():
 								shutil.rmtree(os.path.join(root, d))
 							except:
 								pass
-		LogNotify("[COLOR {0}]{1}[/COLOR]".format(COLOR1, ADDON_NAME), '[COLOR {0}]Cache Limpo com Sucesso![/COLOR]'.format(COLOR2))
+		LogNotify("[COLOR {0}]{1}[/COLOR]".format(COLOR1, ADDON_NAME), '[COLOR {0}]Borrado terminado![/COLOR]'.format(COLOR2))
 		xbmc.executebuiltin("Container.Refresh()")
 
 def get_params():

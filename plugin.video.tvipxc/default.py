@@ -654,11 +654,11 @@ def pvrsetup():
 	return
 
 def correctPVR():
-	choice = DIALOG.yesno(ADDON_NAME, 'Does your provider allow M3U?')
+	choice = DIALOG.yesno(ADDON_NAME, 'Su proveedor permite el formato M3U?')
 	if choice:
 		m3u_do = 'no'
 	else:
-		DP.create(ADDON_NAME, "Please Wait")
+		DP.create(ADDON_NAME, "Espere por favor")
 		tools.gen_m3u(panel_api, M3U_PATH)
 		m3u_do = 'yes'
 	try:
@@ -718,7 +718,7 @@ def num2day(num):
 	return day
 	
 def extras():
-	tools.addDir('Run a Speed Test','ST',10,icon,background,'')
+	tools.addDir('Prueva de velocidad de internet','ST',10,icon,background,'')
 	try:
 		#if xbmc.getCondVisibility('System.HasAddon(pvr.iptvsimple)'):
 		#	tools.addDir('Setup PVR Guide','tv',10,icon,background,'')
@@ -727,7 +727,7 @@ def extras():
 		if os.path.exists(M3U_PATH):
 			tools.addDir('Refresh M3U','RefM3U',10,icon,background,'')
 	except:pass
-	tools.addDir('Clear Cache','clearcache',10,icon,background,'')
+	tools.addDir('Lmpiar el cache del servidor','clearcache',10,icon,background,'')
 	#tools.addDir('Tester','TEST',10,icon,background,'')
 
 params=tools.get_params()

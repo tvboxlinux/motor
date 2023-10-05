@@ -169,7 +169,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.tvipxc" name="[B][COLOR red]Xtream Player[/B][/COLOR]" version="3.3.4" provider-name="Ottlinux">	<requires>
+<addon id="plugin.video.tvipxc" name="[B][COLOR red]Xtream Player[/B][/COLOR]" version="3.3.5" provider-name="Ottlinux">	<requires>
 		<import addon="script.module.requests" version="2.27.1"/>
 	</requires>
   <extension point="xbmc.python.pluginsource"
@@ -188,7 +188,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.xtream-codes" name="Xtream-Codes IPTV" version="3.9" provider-name="Aljota">
+<addon id="plugin.video.xtream-codes" name="Xtream-Codes IPTV" version="4.0" provider-name="Aljota">
   <requires>
     <import addon="script.module.six" />
 	<import addon="inputstream.ffmpegdirect" version="20.5.0" optional="true" />
