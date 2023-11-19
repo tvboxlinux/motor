@@ -1,0 +1,241 @@
+# Kodi Media Center language file
+# Addon Name: PVR TVLINK Client
+# Addon id: pvr.tvlink
+# Addon Provider: Alex@ELEC
+msgid ""
+msgstr ""
+"Project-Id-Version: KODI Main\n"
+"Report-Msgid-Bugs-To: https://github.com/xbmc/xbmc/issues/\n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Kodi Translation Team\n"
+"Language-Team: Russian (Russia) (http://www.transifex.com/projects/p/kodi-main/language/ru_RU/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ru_RU\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#. label-option: General - m3uRefreshMode
+msgctxt "#30003"
+msgid "Disabled"
+msgstr "Отключено"
+
+msgctxt "#30004"
+msgid "Repeated refresh"
+msgstr "Повторять"
+
+msgctxt "#30005"
+msgid "Once per day"
+msgstr "Один раз в день"
+
+#empty strings from id 30006 to 30009
+
+#. label-category: general
+#. label-group: General - General
+msgctxt "#30010"
+msgid "General"
+msgstr "Основные"
+
+#. label: General - tvlinkIP
+msgctxt "#30011"
+msgid "TVLINK IP-address"
+msgstr "IP-адрес TVLINK"
+
+#. label: General - tvlinkPort
+msgctxt "#30012"
+msgid "TVLINK port"
+msgstr "Порт TVLINK"
+
+#. label: General - tvlinkUser
+msgctxt "#30709"
+msgid "TVLINK profile"
+msgstr "Профиль пользователя TVLINK"
+
+#. label: General - tvlinkToken
+msgctxt "#30714"
+msgid "Auth. Token"
+msgstr "Токен авторизации"
+
+#. label: General - useFFmpeg
+msgctxt "#30716"
+msgid "FFmpeg playlist"
+msgstr "FFmpeg плейлист"
+
+#. label: General - tvlinkTimeout (CURL connection-timeout)
+msgctxt "#30711"
+msgid "TVLINK connection timeout"
+msgstr "Таймаут соединения TVLINK"
+
+#. label: General - startNum
+msgctxt "#30013"
+msgid "Start channel number"
+msgstr "Началый номер канала"
+
+#. label: General - numberByOrder
+msgctxt "#30014"
+msgid "Only number by channel order in list"
+msgstr "Только по порядку из списка"
+
+#. label: General - m3uRefreshMode
+msgctxt "#30015"
+msgid "Auto refresh mode"
+msgstr "Режим обновления каналов"
+
+#. label: General - m3uRefreshIntervalMins
+msgctxt "#30016"
+msgid "Refresh interval"
+msgstr "Интервал обновления (мин)"
+
+#. label: General - m3uRefreshHour
+msgctxt "#30017"
+msgid "Refresh hour (24h)"
+msgstr "Обновить в (часов)"
+
+#. label-group: General - Refresh
+msgctxt "#30018"
+msgid "Refresh"
+msgstr "Обновление списка каналов"
+
+msgctxt "#30019"
+msgid "EPG Settings"
+msgstr "Установки EPG"
+
+msgctxt "#30020"
+msgid "EPG"
+msgstr "EPG"
+
+#. label: EPG Settings - epgTSOverride
+msgctxt "#30023"
+msgid "Apply time shift to all channels"
+msgstr "Применить сдвиг ко всем каналам"
+
+#. label: EPG Settings - epgTimeShift
+msgctxt "#30024"
+msgid "EPG time shift"
+msgstr "Сдвиг во времени EPG"
+
+msgctxt "#30025"
+msgid "Cache channel list at local storage"
+msgstr "Кэшировать список каналов в локальное хранилище"
+
+msgctxt "#30026"
+msgid "Cache XMLTV EPG at local storage"
+msgstr "Кэшировать XMLTV EPG в локальное хранилище"
+
+#. label-group: Stream control
+
+msgctxt "#30030"
+msgid "Streams"
+msgstr "Потоки"
+
+msgctxt "#30040"
+msgid "Stream control"
+msgstr "Управление потоками"
+
+msgctxt "#30630"
+msgid "Stream settings required for the addon to function."
+msgstr "Настройки потоков."
+
+msgctxt "#30045"
+msgid "Buffering streams"
+msgstr "Буферизация потоков"
+
+msgctxt "#30046"
+msgid "Enable stream buffering."
+msgstr "Включить буферизацию потоков."
+
+#. ############
+#. help info #
+#. ############
+
+#. help info - General
+
+#. help-category: General
+msgctxt "#30600"
+msgid "General settings required for the addon to function."
+msgstr "Основные настройки, необходимые для работы аддона."
+
+#. help: General - tvlinkIP
+msgctxt "#30601"
+msgid "This setting must contain a valid [B]TVLINK IP-address[/B] for the addon to function."
+msgstr "IP-адрес сервера [B]TVLINK[/B]."
+
+#. help: General - tvlinkPort
+msgctxt "#30602"
+msgid "This setting must contain a valid [B]TVLINK port[/B] for the addon to function."
+msgstr "Порт сервера [B]TVLINK[/B]."
+
+#. help: General - tvlinkUser
+msgctxt "#30710"
+msgid "This setting must contain a valid [B]TVLINK user profile name[/B] for the addon to function."
+msgstr "Профиль пользователя [B]TVLINK[/B] для получения списка каналов."
+
+#. help: General - tvlinkToken
+msgctxt "#30715"
+msgid "This setting must contain a valid [B]TVLINK Authorization Token[/B] for the addon to function."
+msgstr "Токен авторизации [B]TVLINK[/B] для доступа к потокам."
+
+#. help: General - useFFmpeg
+msgctxt "#30717"
+msgid "Select if you want to use the transcoding FFmpeg playlist."
+msgstr "Выберите если Вы хотите использовать [B]FFmpeg модуль[/B] TVLINK."
+
+#. help: General - tvlinkTimeout (CURL connection-timeout)
+msgctxt "#30712"
+msgid "This setting must contain a valid [B]TVLINK connection timeout[/B] for the addon to function."
+msgstr "Таймаут соединения для потоков [B]TVLINK[/B]."
+
+#. help: General - m3uCache
+msgctxt "#30604"
+msgid "Select whether or not the the channel list should be cached locally."
+msgstr "Выберите, следует ли кэшировать список каналов локально."
+
+#. help: General - startNum
+msgctxt "#30605"
+msgid "The number to start numbering channels from. Only used when [B]Use backend channel numbers[/B] from PVR settings is enabled and a channel number is not supplied in the M3U file."
+msgstr "Номер для начала нумерации каналов. Используется только в том случае, если включен параметр [B]Use backend channel numbers[/B] из настроек PVR и номер канала не указан в файле M3U »."
+
+#. help: General - numberByOrder
+msgctxt "#30606"
+msgid "Ignore any 'tvg-chno' tags and only number channels by the order in the M3U starting at 'Start channel number'."
+msgstr "Игнорирорать все теги 'tvg-chno' и нумеровать каналы по порядку в M3U, начиная с 'Началый номер канала'."
+
+#. help: General - m3uRefreshMode
+msgctxt "#30607"
+msgid "Select the auto refresh mode for the channel list and EPG. Note that caching is disabled if auto refresh is used. The options are: [B]Disabled[/B] - Don't auto refresh; [B]Repeated refresh[/B] - Refresh the lists on a minute based interval; [B]Once per day[/B] - Refresh the lists once per day."
+msgstr "Выберите режим автоматического обновления для списка каналов и EPG. Обратите внимание: кеширование будет отключено, если используется автоматическое обновление. Возможные варианты: [B]Отключено[/B] - не обновлять автоматически; [B]Повторять[/B] - обновлять списки с минутным интервалом; [B]Один раз в день[/B] - Обновлять списки один раз в день."
+
+#. help: General - m3uRefreshIntervalMins
+msgctxt "#30608"
+msgid "If [B]Auto refresh mode[/B] is [B]Repeated refresh[/B] refresh the lists every time this number of minutes passes. Max 180 minutes."
+msgstr "Если [B]Режим обновления каналов[/B] установлен на [B]Повторять[/B], списки будут обновляться каждый раз, когда проходит это количество минут. Макс 180 минут."
+
+#. help: General - m3uRefreshHour
+msgctxt "#30609"
+msgid "If auto refresh mode is [B]Once per day[/B] refresh the lists every time this hour of the day is reached"
+msgstr "Если [B]Режим обновления каналов[/B] установлен на [B]Один раз в день[/B], списки будут обновляться каждый раз, когда наступает этот час дня."
+
+#empty strings from id 30610 to 30619
+
+#. help info - EPG Settings
+
+#. help-category: EPG Settings
+msgctxt "#30620"
+msgid "Settings related to the EPG."
+msgstr "Настройки, относящиеся к EPG."
+
+#. help: EPG Settings - epgCache
+msgctxt "#30624"
+msgid "Select whether or not the the XMLTV file should be cached locally."
+msgstr "Выберите, следует ли кэшировать файл XMLTV локально."
+
+#. help: EPG Settings - epgTimeShift
+msgctxt "#30625"
+msgid "Adjust the EPG times by this value in minutes, range is from -720 mins to +840 mins (- 12 hours to +14 hours)."
+msgstr "Настройте время EPG на это значение в минутах, диапазон от -720 мин до +840 мин (от -12 часов до +14 часов)."
+
+#. help: EPG Settings - epgTSOverside
+msgctxt "#30626"
+msgid "Whether or not to override the time shift for all channels with `EPG time shift`. If not enabled `EPG time shift` plus the individual time shift per channel (if available) will be used."
+msgstr "Следует ли переопределять временной сдвиг для всех каналов с помощью `Сдвиг во времени EPG`. Если этот параметр не включен, будет использоваться `Сдвиг во времени EPG` плюс индивидуальный сдвиг для каждого канала (если доступен)."

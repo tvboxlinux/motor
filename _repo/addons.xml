@@ -204,6 +204,148 @@
   </extension>
 </addon>
 
+<addon
+  id="pvr.tvlink"
+  version="2.3.1"
+  name="PVR TVLINK Client"
+  provider-name="Alex@ELEC">
+  <requires>
+<import addon="kodi.binary.global.main" minversion="2.0.0" version="2.0.2"/>
+<import addon="kodi.binary.global.general" minversion="1.0.4" version="1.0.5"/>
+<import addon="kodi.binary.global.filesystem" minversion="1.1.7" version="1.1.8"/>
+<import addon="kodi.binary.global.tools" minversion="1.0.0" version="1.0.4"/>
+<import addon="kodi.binary.instance.pvr" minversion="8.2.0" version="8.2.0"/>
+    <import addon="inputstream.ffmpegdirect" minversion="1.19.0"/>
+  </requires>
+  <extension
+    point="kodi.pvrclient"
+    library_linux="pvr.tvlink.so.2.3.0"/>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">PVR addon for TVLINK server.</summary>
+    <summary lang="ru_RU">PVR аддон для TVLINK сервера.  https://alexelec.tv/nastrojka-tvlink/</summary>
+    <description lang="en_GB">TVLINK PVR Client support streaming of Live TV, Timeshift, TV programs archives and EPG.</description>
+    <description lang="ru_RU">Интерфейс для TVLINK сервера. Поддерживает просмотр потокового ТВ, архивов передач, Timeshift и работу с электронным телегидом.</description>
+    <disclaimer lang="en_GB">The authors are in no way responsible for failed playings, incorrect EPG times, wasted hours, or any other undesirable effects.</disclaimer>
+    <disclaimer lang="ru_RU">Это нестабильная программа! Авторы не несут ответственности за неудачные воспроизведение, неверные время EPG, потраченное время и прочие нежелательные эффекты.</disclaimer>
+    <platform></platform>
+    <license>GPL-2.0-or-later</license>
+    <forum>https://forum.alexelec.tv/index.php?board=10.0</forum>
+    <assets>
+      <icon>icon.png</icon>
+    </assets>
+    <news>
+v2.3.0
+- Fixed: Rename sourses
+v2.2.2
+- Fixed: Stream buffering mode
+v2.2.1
+- Added: option FFmpeg playlist
+v2.2.0
+- Added: rework code for new Kodi PVR API (curl)
+- Delete: unused options Stream control
+v2.1.2
+- Added: redo switch streams
+- Added: options Stream control
+- Added: enable/disable Buffering streams
+v2.1.1
+- Added: redo Catchup TVLINK-3.0.2
+v2.1.0
+- Fixed: Kodi main API update to version 2.0.0
+v2.0.9
+- Added: Token for authorization of streams
+v2.0.8
+- Added: TVLINK connection timeout settings
+v2.0.7
+- Fixed: Fix episode number when there is no season
+- Fixed: Return server error if channels or groups could not be loaded due to missing file so they are not cleared in Kodi
+v2.0.6
+- Fixed: reopen current channel on failure
+v2.0.5
+- Fixed: Add support for format specifiers use for detecting terminating catchup and granularity
+v2.0.4
+- Added: user profile settings
+v2.0.3
+- Fixed: Reset count when the stream is closed
+- Fixed: Add missing initialisation of display name with underscores after fixing slow epg
+v2.0.2
+- Added: restart stream if max count stalled
+- Added: send a request to restart the stream
+- Added: reload settings before reloading playlist and EPG data
+v2.0.1
+- Fixed: An xmltv channel cannot have an empty id field
+- Fixed: Fix slow epg load due to display name checks when finding a channel
+- Fixed: Only force load EPG data on startup if catchup is enabled
+v2.0.0
+- Init: first version for Matrix
+    </news>
+  </extension>
+</addon>
+
+<addon id="repository.a4ksubtitles"
+       name="a4kSubtitles Repository"
+       version="1.1.0a"
+       provider-name="Unknown">
+    <extension point="xbmc.addon.repository" name="DaB Repository">
+			<dir>
+				<info compressed="false">https://raw.githubusercontent.com/newt-sc/a4kSubtitles/master/packages/addons.xml</info>
+				<checksum>https://raw.githubusercontent.com/newt-sc/a4kSubtitles/master/packages/addons.xml.crc</checksum>
+        <artdir>https://github.com/a4k-openproject/a4kSubtitles/releases/download/v0.0.13</artdir>
+				<datadir zip="true">https://github.com/newt-sc/a4kSubtitles/archive</datadir>
+			</dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>a4kSubtitles</summary>
+        <description>a4kSubtitles Repository</description>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+        </assets>
+    </extension>
+</addon>
+
+<addon id="repository.addons4kodi" name="Addons4Kodi Repository" version="2.1" provider-name="A4K">
+	<extension point="xbmc.addon.repository" name="Addons4Kodi Repository">
+        <dir minversion="18.0">
+            <info compressed="false">https://raw.githubusercontent.com/a4k-openproject/repository.addons4kodi/master/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/a4k-openproject/repository.addons4kodi/master/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/a4k-openproject/repository.addons4kodi/master/zips/</datadir>
+        </dir>
+        <dir minversion="18.0" maxversion="18.9.9">
+            <info compressed="false">https://raw.githubusercontent.com/a4k-openproject/repository.openscrapers/master/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/a4k-openproject/repository.openscrapers/master/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/a4k-openproject/repository.openscrapers/master/zips/</datadir>
+        </dir>
+        <dir minversion="18.0" maxversion="18.9.9">
+            <info compressed="false">https://raw.githubusercontent.com/a4k-openproject/repository.openwizard/master/leia/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/a4k-openproject/repository.openwizard/master/leia/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/a4k-openproject/repository.openwizard/master/leia/zips/</datadir>
+        </dir>
+        <dir minversion="19.0">
+            <info compressed="false">https://raw.githubusercontent.com/a4k-openproject/repository.openwizard/master/matrix/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/a4k-openproject/repository.openwizard/master/matrix/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/a4k-openproject/repository.openwizard/master/matrix/zips/</datadir>
+        </dir>
+        <dir minversion="18.0">
+            <info>https://raw.githubusercontent.com/newt-sc/a4kStreaming/master/packages/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/newt-sc/a4kStreaming/master/packages/addons.xml.crc</checksum>
+            <datadir>https://github.com/newt-sc/a4kStreaming/archive</datadir>
+            <artdir>https://github.com/newt-sc/a4kStreaming/releases/download/v0.1.0</artdir>
+        </dir>
+        <dir minversion="18.0">
+            <info>https://raw.githubusercontent.com/newt-sc/a4kSubtitles/master/packages/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/newt-sc/a4kSubtitles/master/packages/addons.xml.crc</checksum>
+            <datadir>https://github.com/newt-sc/a4kSubtitles/archive</datadir>
+            <artdir>https://github.com/a4k-openproject/a4kSubtitles/releases/download/v0.0.13</artdir>
+        </dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Addons4Kodi Repository</summary>
+		<description>The official repo of /r/Addons4Kodi!.</description>
+		<disclaimer></disclaimer>
+		<platform>all</platform>
+	</extension>
+</addon>
+
 <addon id="repository.al8ina" name="Bee Queen" version="1.0.2" provider-name="ASistem">
     <extension point="xbmc.addon.repository" name="Bee Queen Repository">
 	    <dir>
@@ -352,6 +494,21 @@
     </extension>
 
     <extension point="xbmc.service" library="service.py" start="login|startup" />
+</addon>
+
+<addon id="repository.cocoscrapers" name="CocoScrapers Repository" version="1.0.0" provider-name="CocoScrapers">
+    <extension point="xbmc.addon.repository" name="CocoScrapers Repository">
+        <dir minversion="19.0">
+            <info compressed="false">https://raw.githubusercontent.com/CocoJoe2411/repository.cocoscrapers/master/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/CocoJoe2411/repository.cocoscrapers/master/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/CocoJoe2411/repository.cocoscrapers/master/zips/</datadir>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary>CocoScrapers Repository</summary>
+        <description>Unofficial add-ons repository</description>
+    </extension>
 </addon>
 
 <addon id="repository.elementumorg" name="ElementumOrg repository" provider-name="elementumorg" version="0.0.2">
@@ -622,6 +779,21 @@
       <fanart>fanart.jpg</fanart>
     </assets>
   </extension>
+</addon>
+
+<addon id="repository.tikipeter" name="Tikipeter's Repository" version="1.0.3" provider-name="Tikipeter">
+    <extension point="xbmc.addon.repository" name="Tikipeter's Repository">
+        <dir minversion="20.0">
+            <info compressed="false">https://raw.githubusercontent.com/Tikipeter/repository.tikipeter/master/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/Tikipeter/repository.tikipeter/master/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/Tikipeter/repository.tikipeter/master/zips</datadir>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary>Tikipeter's Repository</summary>
+        <description>Unofficial add-ons repository</description>
+    </extension>
 </addon>
 
 <addon id="repository.tikipeter.test" name="Tikipeter's Test Repository" version="1.0.0" provider-name="Tikipeter">

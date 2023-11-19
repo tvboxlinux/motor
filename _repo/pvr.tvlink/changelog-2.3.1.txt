@@ -1,0 +1,59 @@
+v2.3.0
+- Fixed: Rename sourses
+
+v2.2.2
+- Fixed: Stream buffering mode
+
+v2.2.1
+- Added: option FFmpeg playlist
+
+v2.2.0
+- Added: rework code for new Kodi PVR API (curl)
+- Delete: unused options Stream control
+
+v2.1.2
+- Added: redo switch streams
+- Added: options Stream control
+- Added: enable/disable Buffering streams
+
+v2.1.1
+- Added: redo Catchup TVLINK-3.0.2
+
+v2.1.0
+- Fixed: Kodi main API update to version 2.0.0
+
+v2.0.9
+- Added: Token for authorization of streams
+
+v2.0.8
+- Added: TVLINK connection timeout settings
+
+v2.0.7
+- Fixed: Fix episode number when there is no season
+- Fixed: Return server error if channels or groups could not be loaded due to missing file so they are not cleared in Kodi
+
+v2.0.6
+- Fixed: reopen current channel on failure
+
+v2.0.5
+- Fixed: Add support for format specifiers use for detecting terminating catchup and granularity
+
+v2.0.4
+- Added: user profile settings
+
+v2.0.3
+- Fixed: Reset count when the stream is closed
+- Fixed: Add missing initialisation of display name with underscores after fixing slow epg
+
+v2.0.2
+- Added: restart stream if max count stalled
+- Added: send a request to restart the stream
+- Added: reload settings before reloading playlist and EPG data
+
+v2.0.1
+- Fixed: An xmltv channel cannot have an empty id field
+- Fixed: Fix slow epg load due to display name checks when finding a channel
+- Fixed: Only force load EPG data on startup if catchup is enabled
+
+v2.0.0
+- Init: first version for Matrix
