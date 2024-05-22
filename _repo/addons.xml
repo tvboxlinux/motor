@@ -79,6 +79,31 @@
 	</extension>
 </addon>
 
+<addon id="plugin.video.resolvedor" name="Resolvedor" version="1.0.3" provider-name="Zoreu">
+    <requires>
+	    <import addon="script.module.simplejson" />
+        <import addon="script.module.six" />
+        <import addon="script.module.kodi-six" />
+		<import addon="script.module.requests"/>
+		<import addon="script.module.beautifulsoup4"/>
+		<import addon="script.module.resolveurl"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+		<summary lang="pt">Resolvedor é um addon que resolve e reproduz links</summary>
+		<description lang="pt">Todos os videos são de responsabilidade de terceiros.</description>
+        <platform>all</platform>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+        <disclaimer>The author of this addon do not host any of the content which is found and have no affiliation with any of the content providers. This addon simply searches websites for content. Use at your own risk!</disclaimer>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
+
 <addon id="repository.motor" name="Motor" version="3.2.1" provider-name="ottlinux">
 	<requires>
 		<import addon="xbmc.addon" version="12.0.0"/>
@@ -341,30 +366,5 @@
         <icon>icon.png</icon>
     </assets>
 	</extension>
-</addon>
-
-<addon id="plugin.video.duffyou" name="Duff You" version="0.2.1" provider-name="La Taberna">
-    <requires>
-        <import addon="script.module.six" version="1.11.0" />
-        <import addon="script.module.simplecache" />
-        <import addon="script.module.inputstreamhelper" version="0.5.0" />
-    </requires>
-
-    <extension point="xbmc.python.pluginsource" library="libs/plugin.py">
-        <provides>video</provides>
-    </extension>
-	<extension point="xbmc.python.module" library="libs" />
-    <extension point="xbmc.addon.metadata">
-        <description>Hasta las narices de las apikeys de YouTube? Y de ver como calidad máxima los videos de la plataforma solo hasta 720p?[CR]Pues se acabó! Desde nuestra taberna os presentamos un nuevo addon de YouTube, donde no hace falta APIKEY alguna, ni tampoco hay ningún tipo de restricción para ver los videos a la máxima calidad ofrecida, 720p, 1080p, 2K y 4K![CR]Todo esto y mucho mas...</description>
-        <disclaimer>Este es un software [COLOR red][B]gratuito[/B][/COLOR][CR][COLOR red][B]Pero no se permite[/B][/COLOR] su distribuición preinstalada en ningún tipo de dispositivo ni tampoco su inclusión total o parcial en cualquier paquete de software y/o hardware por el que el usuario final deba [COLOR red][B]pagar o hacer una donación[/B][/COLOR], por su adquisición, por su uso o por recibir asistencia.[CR]Si cree que alguna de estas normas no se está cumpliendo póngase en contacto con nosotros.</disclaimer>
-        <platform>all</platform>
-        <assets>
-            <icon>icon.jpg</icon>
-            <fanart>fanart.jpg</fanart>
-        </assets>
-        <license>[B]Este es un software gratuito[/B]</license>
-        <news>- Añadida opción de reproducción externa de playlists[CR]- Correcciones menores
-        </news>
-    </extension>
 </addon>
 </addons>
