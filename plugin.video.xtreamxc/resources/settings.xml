@@ -1,0 +1,12 @@
+<settings>
+<category label="General">
+        <setting id="DNS" type="text" label="Servidor" default=""/>
+		<setting id="Username" type="text" label="Usuario" default=""/>
+		<setting id="Password" type="text" label="Contraseña" default=""/>
+		<setting id="meta" type="bool" label="Metadatos de peliculas" default="false"/>
+        <setting id="f4m" type="bool" label="Activar soporte de transmission F4mTester" default="false"/>
+		<setting id="hidexxx" type="bool" label="Ocultar contenido para adultos" default="false"/>
+		<setting id="xxx_pwset" type="bool" label="Contenido para adultos con bloqueo de contraseña" default="false"/>
+		<setting id="xxx_pw" option = 'hidden' type="text" label="Contraseña de contenido para adultos (predeterminada: 1234)" default="1234"/>
+</category>
+</settings>
