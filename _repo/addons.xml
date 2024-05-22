@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
+<<<<<<< HEAD
 <addon id="plugin.video.xtreamxc" name="XCUI Streams" version="5.2.7" provider-name="Ottlinux">
 	<requires>
 		<import addon="script.module.requests" version="2.27.1"/>
@@ -19,6 +20,8 @@
   </extension>
 </addon>
 
+=======
+>>>>>>> e63bf51435ad1bafdf647c2face4f8b45cb41807
   <addon
   id="repository.magellan"
   name="[COLOR red]Mage[/COLOR] [COLOR black]llan[/COLOR] [COLORcyan]Repository[/COLOR]"
