@@ -588,7 +588,7 @@ def addonsettings(url,description):
 	elif url =="AS":
 		xbmc.executebuiltin('Addon.OpenSettings(%s)'% ADDON_ID)
 	elif url =="ADS":
-		dialog = xbmcgui.Dialog().select('Edit Advanced Settings', ['Open AutoConfig','Enable Fire TV Stick AS','Enable Fire TV AS','Enable 1GB Ram or Lower AS','Enable 2GB Ram or Higher AS','Enable Nvidia Shield AS','Disable AS'])
+		dialog = xbmcgui.Dialog().select('Editar configuracion avanzada', ['Abrir configuracion automatica','Enable Fire TV Stick AS','Enable Fire TV AS','Enable 1GB Ram or Lower AS','Enable 2GB Ram or Higher AS','Enable Nvidia Shield AS','Disable AS'])
 		if dialog==0:
 			advancedsettings('auto')
 		elif dialog==1:
@@ -608,9 +608,9 @@ def addonsettings(url,description):
 			tools.ASln()
 		elif dialog==6:
 			advancedsettings('remove')
-			xbmcgui.Dialog().ok(ADDON_NAME, 'Advanced Settings Removed')
+			xbmcgui.Dialog().ok(ADDON_NAME, 'Configuracion avanzada eliminada')
 	elif url =="ADS2":
-		dialog = xbmcgui.Dialog().select('Select Your Device Or Closest To', ['Open AutoConfig','Fire TV Stick ','Fire TV','1GB Ram or Lower','2GB Ram or Higher','Nvidia Shield'])
+		dialog = xbmcgui.Dialog().select('Seleccione su dispositivo', ['Open AutoConfig','Fire TV Stick ','Fire TV','1GB Ram or Lower','2GB Ram or Higher','Nvidia Shield'])
 		if dialog==0:
 			advancedsettings('auto')
 			tools.ASln()
@@ -681,17 +681,17 @@ def addonsettings(url,description):
 		tester()
 
 def adult_set():
-	dialog = DIALOG.yesno(ADDON_NAME,'Você gostaria de ocultar o menu Adulto? \nVocê pode editar isso depois na configuração.')
+	dialog = DIALOG.yesno(ADDON_NAME,'Quieres ocultar el menu Adultos?.')
 	if dialog:
 		control.setSetting('xxx_pwset','true')
 		pass
 	else:
 		control.setSetting('xxx_pwset','false')
 		pass
-	dialog = DIALOG.yesno(ADDON_NAME,'Gostaria de Ativar Proteção de Conteudo Adulto? \nVocê pode editar isso depois na configuração.')
+	dialog = DIALOG.yesno(ADDON_NAME,'Activar la proteccion de contenido para adultos.')
 	if dialog:
 		control.setSetting('xxx_pwset','true')
-		adultpw = tools.keypopup('Coloque a Senha')
+		adultpw = tools.keypopup('Introduce la contraseña')
 		control.setSetting('xxx_pw',adultpw)
 	else:
 		control.setSetting('xxx_pwset','false')
@@ -792,13 +792,13 @@ def pvrsetup():
 	return
 
 def correctPVR():
-	choice = DIALOG.yesno(ADDON_NAME, 'Does your provider allow M3U?')
+	choice = DIALOG.yesno(ADDON_NAME, 'Su proveedor permite M3U?')
 	if choice:
 		m3u_do = 'no'
 	else:
-		DP.create(ADDON_NAME, "Please Wait")
+		DP.create(ADDON_NAME, "Espere por favor")
 		tools.gen_m3u(panel_api, M3U_PATH)
-		m3u_do = 'yes'
+		m3u_do = 'si'
 	try:
 		addon		  = xbmcaddon.Addon(ADDON_ID)
 		dns_text	  = addon.getSetting(id='DNS')

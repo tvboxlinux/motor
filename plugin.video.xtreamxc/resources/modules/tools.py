@@ -236,7 +236,7 @@ def clear_cache():
 								shutil.rmtree(os.path.join(root, d))
 							except:
 								pass
-		LogNotify("[COLOR {0}]{1}[/COLOR]".format(COLOR1, ADDON_NAME), '[COLOR {0}]Cache Limpo com Sucesso![/COLOR]'.format(COLOR2))
+		LogNotify("[COLOR {0}]{1}[/COLOR]".format(COLOR1, ADDON_NAME), '[COLOR {0}]Cache limpio![/COLOR]'.format(COLOR2))
 		xbmc.executebuiltin("Container.Refresh()")
 
 def get_params():
