@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.xtreamxc" name="XCUI Streams" version="4.2.7" provider-name="Ottlinux">
+<addon id="plugin.video.xtreamxc" name="XCUI Streams" version="4.2.8" provider-name="Ottlinux">
 	<requires>
 		<import addon="script.module.requests" version="2.27.1"/>
 	</requires>
